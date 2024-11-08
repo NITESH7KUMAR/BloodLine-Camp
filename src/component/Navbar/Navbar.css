@@ -1,6 +1,11 @@
 
    /* CSS */
    
+   body{
+    background-color:#fcf6f6;
+    padding-top: 70px;
+   }
+
 .header {
     background-color: #fbd9e3; 
     padding: 10px;
@@ -119,7 +124,12 @@
 }
 
 
-
+@media (max-width: 990px) { 
+  .nav-links{
+    width: 80%;
+    height: 5%;
+  }
+}
 
 @media (max-width: 349px) { 
     .nav-links {

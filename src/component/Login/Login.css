@@ -1,6 +1,11 @@
 /* Overall container for the login page */
 
 body {
+    background-image: url('../assets/Login-img.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,8 +14,6 @@ body {
     font-family: Arial, sans-serif;
     flex-direction: column; 
 }
-
-
 
 .header {
     position: fixed;
@@ -22,8 +25,6 @@ body {
     text-align: center;
     z-index: 1000; 
 }
-
-
 
 .login-container {
     width: 300px;
@@ -82,13 +83,13 @@ body {
 }
 
 .login-container button:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #95aa2e; /* Darker green on hover */
 }
 
 .signup-link button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #13e273; /* Green button color */
+    background-color: #884528; /* Green button color */
     color: white;
     border: none;
     border-radius: 5px;
