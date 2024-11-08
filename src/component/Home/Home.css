@@ -3,7 +3,7 @@
 /* Reset default margins */
 
 .home {
-    padding-top: 7050px;
+    padding-top: 6550px;
     text-align: center;
     background-color: #f0efef;
 }
@@ -162,7 +162,7 @@ cursor:pointer;
 /* Responsive styles */
 @media (max-width: 990px) { 
     .home {
-        padding-top: 5500px;
+        padding-top: 4800px;
         text-align: center;
         background-color: #f0efef;
     }

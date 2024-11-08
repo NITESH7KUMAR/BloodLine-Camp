@@ -27,12 +27,14 @@ body {
 }
 
 .login-container {
+    
     width: 300px;
     padding: 30px;
     background-color: rgb(221, 215, 218);
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    display: fixed;
 }
 
 .login-container h2 {
@@ -46,7 +48,7 @@ body {
 .login-container label {
     display: block;
     font-size: 14px;
-    color: #951818;
+    color: #4c151c;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -89,7 +91,7 @@ body {
 .signup-link button {
     margin-top: 20px;
     padding: 10px;
-    background-color: #884528; /* Green button color */
+    background-color: #f05e1f; /* Green button color */
     color: white;
     border: none;
     border-radius: 5px;

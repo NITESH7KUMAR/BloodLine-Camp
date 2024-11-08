@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -11,7 +12,7 @@ const Footer = () => {
     return (
         <div className="footer">
 
-            <footer>
+            <footer className='footer2'>
                     <div className="foot-panel1" onClick={scrollTop}>
                        <p> Back to Top</p>
                     </div>
@@ -19,9 +20,9 @@ const Footer = () => {
                 <div className="foot-panel2">
                     <ul>
                         <p>Get to know Us</p>
-                        <a href="Home">Home</a>
-                        <a href="About">About Us</a>
-                        <a href="Work">Work</a>
+                        <Link to="/">Home</Link>
+                        <Link to="/about">About Us</Link>
+                        <Link to="/d-blood">Donate Blood</Link>
                     </ul>
 
                     <ul className='contect'>
