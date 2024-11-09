@@ -32,36 +32,37 @@ function Login({ onLogin }) {
     };
 
     return (
-        <div className="login-container">
-            <h2>Login</h2>
-            <form onSubmit={handleLogin}>
-                <label>
-                    Username or Email:
-                    <input
-                        type="text"
-                        value={identifier}
-                        onChange={(e) => setIdentifier(e.target.value)}
-                        required
-                    />
-                </label>
-                <label>
-                    Password:
-                    <input
-                        type="password"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </label>
-                <button type="submit">Login</button>
-            </form>
-            <div className="signup-link">
-                <Link to="/signup">
-                    <button>Don't have an account? Signup</button>
-                </Link>
+            <div className="login-page"> {/* Add this wrapper */}
+                <div className="login-container">
+                    <h2>Login</h2>
+                    <form onSubmit={handleLogin}>
+                        <label>
+                            Username or Email:
+                            <input
+                                type="text"
+                                value={identifier}
+                                onChange={(e) => setIdentifier(e.target.value)}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Password:
+                            <input
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </label>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div className="signup-link">
+                        <Link to="/signup">
+                            <button>Don't have an account? Signup</button>
+                        </Link>
+                    </div>
+                </div>
             </div>
-        </div>
-    );
+        );
 }
-
 export default Login;

@@ -24,7 +24,6 @@ function ProfilePage() {
         .then((data) => {
           if (data.success) {
             alert("Profile updated successfully.");
-            window.location.href = "./Cart";
           } else {
             alert("Failed to save data.");
           }
@@ -33,6 +32,7 @@ function ProfilePage() {
   };
 
   return (
+    <div className="profile-page">
     <div className="profile-container">
       <div className="pagehead">
         <h3 className="title">Update Profile</h3>
@@ -103,6 +103,7 @@ function ProfilePage() {
         </div>
       </div>
     </div>
+  </div>
   );
 }
 

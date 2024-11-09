@@ -8,6 +8,19 @@ body {
     font-family: Arial, sans-serif;
     flex-direction: column; 
 }
+.Sign-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 100vw; 
+    background-image: url('../assets/Login-img.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0; 
+    font-family: Arial, sans-serif;
+}
 
 .header {
     position: fixed;

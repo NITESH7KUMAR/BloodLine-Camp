@@ -21,12 +21,12 @@ function Accounts() {
             <h3>Our Mission</h3>
 
             <Link to='/profile'><li>Proflie</li></Link>
-            <li>Registration</li>
-            <li>Emergency Support</li>
-            <li>Blood Camps</li>
-            <li>Donor Network</li>
-            <li>Health Safety</li>
-            <li>Awareness Drives</li>
+            <Link to='/registration'><li>Registration</li></Link>
+            <Link to='/'><li>Emergency Support</li></Link>
+            <Link to='/'><li>Blood Camps</li></Link>
+            <Link to='/about'><li>Donor Network</li></Link>
+            <Link to='/about'><li>Health Safety</li></Link>
+            <Link to='/'> <li>Awareness Drives</li></Link>
                   
             </div> 
           </div>

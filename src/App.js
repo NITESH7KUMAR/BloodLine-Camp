@@ -7,6 +7,7 @@ import Navbar from './component/Navbar/Navbar.js';
 import Signup from './component/Signup/Signup.js';
 import Login from './component/Login/Login.js';
 import ProfilePage from './component/Accounts/Profile.js';
+import Registration from './component/Accounts/Registration.js';
 
 function App() {
   
@@ -29,6 +30,8 @@ function App() {
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login onLogin={() => handleLoginStateChange(true)} />} />
                 <Route path="/profile" element={<ProfilePage/>} />
+                <Route path="/registration" element={<Registration/>} />
+
             </Routes>
         </BrowserRouter>
     );
