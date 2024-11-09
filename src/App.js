@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './component/Home/Home.js';
 import About from './component/About/About.js';
 import Contact from './component/Contact/Contact.js';
-// import DonateNow from './component/DonateNow/DonateNow.js';
+import DonateNow from './component/Donatenow/DonateNow.js';
 import Navbar from './component/Navbar/Navbar.js';
 import Signup from './component/Signup/Signup.js';
 import Login from './component/Login/Login.js';
@@ -30,7 +30,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                {/* <Route path="/DonateNow" element={<DonateNow />} /> */}
+                <Route path="/DonateNow" element={<DonateNow />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login onLogin={() => handleLoginStateChange(true)} />} />
                 <Route path="/profile" element={<ProfilePage/>} />
