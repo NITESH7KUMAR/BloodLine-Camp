@@ -6,7 +6,7 @@ import Contact from './component/Contact/Contact.js';
 import Navbar from './component/Navbar/Navbar.js';
 import Signup from './component/Signup/Signup.js';
 import Login from './component/Login/Login.js';
-import ProfilePage from './component/accounts/Profile.js';
+import ProfilePage from './component/Accounts/Profile.js';
 
 function App() {
   

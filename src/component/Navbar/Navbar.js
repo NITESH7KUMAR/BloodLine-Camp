@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Accounts from '../accounts/Accounts.js';
+import Accounts from '../Accounts/Accounts.js';
 
 const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
     const handleLogout = () => {
