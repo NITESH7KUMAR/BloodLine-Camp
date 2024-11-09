@@ -23,7 +23,7 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
                         <Link to="/contact">Contact</Link>
                     </li>
                     <li className="nav-links1">
-                        <Link to="/Donate-Now">DonateNow</Link>
+                        <Link to="/Donatenow">DonateNow</Link>
                     </li>
                     <li className="nav-links1">
                         <Accounts/>

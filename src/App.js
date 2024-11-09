@@ -30,7 +30,7 @@ function App() {
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/DonateNow" element={<DonateNow />} />
+                <Route path="/donatenow" element={<DonateNow />} />
                 <Route path="/signup" element={<Signup />} />
                 <Route path="/login" element={<Login onLogin={() => handleLoginStateChange(true)} />} />
                 <Route path="/profile" element={<ProfilePage/>} />

@@ -22,7 +22,7 @@ const Footer = () => {
                         <p>Get to know Us</p>
                         <Link to="/">Home</Link>
                         <Link to="/about">About Us</Link>
-                        <Link to="/DonateNow">Donate Blood</Link>
+                        <Link to="/Donatenow">Donate Blood</Link>
                     </ul>
 
                     <ul className='contect'>
