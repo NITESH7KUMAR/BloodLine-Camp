@@ -23,6 +23,7 @@
   .slides1 {
     display: flex;
     transition: transform 0.8s ease-in-out;
+
   }
   
   .slides2 {
@@ -37,7 +38,7 @@
   
   .slides1 img {
     width: 90%;
-    height: 95%;
+    height: 800px;
     object-fit: cover;
     border-radius: 10px; 
     cursor: pointer;
@@ -60,7 +61,7 @@
   box-shadow: 4px 4px 10px rgba(189, 144, 144, 0.5);
   transition: transform 0.3s, box-shadow 0.3s;
   position: absolute;
-  top: 30%;
+  top: 18%;
   z-index: 10;
 
   }

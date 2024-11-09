@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Home.css';
 import Hcarousel from './Hcarousel';
 import Footer from '../Footer/Footer';
@@ -51,7 +52,7 @@ function Home() {
                 with compassion and care, ensuring quality, safety, and support for every donation. Together, 
                 we make a difference—one donation at a time.
             </h5>
-            <button>About Us</button>
+            <Link to='/about'>  <button>About Us</button></Link>
           </div>
           
           </div>  
