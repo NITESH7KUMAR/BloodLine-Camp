@@ -22,7 +22,7 @@ function Accounts() {
 
             <Link to='/profile'><li>Proflie</li></Link>
             <Link to='/registration'><li>Registration</li></Link>
-            <Link to='/'><li>Emergency Support</li></Link>
+            <Link to='/blood_recipient-reg'><li>Emergency Support</li></Link>
             <Link to='/'><li>Blood Camps</li></Link>
             <Link to='/about'><li>Donor Network</li></Link>
             <Link to='/about'><li>Health Safety</li></Link>

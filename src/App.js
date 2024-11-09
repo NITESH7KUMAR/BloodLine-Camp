@@ -8,6 +8,8 @@ import Signup from './component/Signup/Signup.js';
 import Login from './component/Login/Login.js';
 import ProfilePage from './component/Accounts/Profile.js';
 import Registration from './component/Accounts/Registration.js';
+import Blood_recipient from './component/Accounts/blood_recipient-reg.js';
+
 
 function App() {
   
@@ -31,6 +33,8 @@ function App() {
                 <Route path="/login" element={<Login onLogin={() => handleLoginStateChange(true)} />} />
                 <Route path="/profile" element={<ProfilePage/>} />
                 <Route path="/registration" element={<Registration/>} />
+                <Route path="/blood_recipient-reg" element={<Blood_recipient/>} />
+
 
             </Routes>
         </BrowserRouter>
