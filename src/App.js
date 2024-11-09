@@ -6,9 +6,10 @@ import Contact from './component/Contact/Contact.js';
 import Navbar from './component/Navbar/Navbar.js';
 import Signup from './component/Signup/Signup.js';
 import Login from './component/Login/Login.js';
+import ProfilePage from './component/accounts/Profile.js';
 
 function App() {
-    // Manage login state in the parent component
+  
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true');
 
     // Update login state in localStorage
@@ -19,17 +20,15 @@ function App() {
 
     return (
         <BrowserRouter>
-            {/* Pass isLoggedIn state and handleLoginStateChange to Navbar */}
+            
             <Navbar isLoggedIn={isLoggedIn} onLoginStateChange={handleLoginStateChange} />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/signup" element={<Signup />} />
-                <Route 
-                    path="/login" 
-                    element={<Login onLogin={() => handleLoginStateChange(true)} />} 
-                />
+                <Route path="/login" element={<Login onLogin={() => handleLoginStateChange(true)} />} />
+                <Route path="/profile" element={<ProfilePage/>} />
             </Routes>
         </BrowserRouter>
     );

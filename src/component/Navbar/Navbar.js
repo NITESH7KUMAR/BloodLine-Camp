@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import Accounts from '../accounts/Accounts.js';
 
 const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
     const handleLogout = () => {
@@ -25,7 +26,7 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
                         <Link to="/d-blood">D-Blood</Link>
                     </li>
                     <li className="nav-links1">
-                        <Link to="/accounts">Accounts</Link>
+                        <Accounts/>
                     </li>
                 </ul>
 
