@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import "./blood_recipient-reg.css";
 
 function BloodRecipient() {
@@ -10,41 +11,38 @@ function BloodRecipient() {
   const [bloodGroup, setBloodGroup] = useState("");
   const [dob, setDob] = useState("");
   const [gender, setGender] = useState("");
-  const [reasonForRequest, setReasonForRequest] = useState("");
-  const [emergencyContact, setEmergencyContact] = useState("");
+  const [reason, setReasonForRequest] = useState("");
+  const [EmContact, setEmergencyContact] = useState("");
   const [urgency, setUrgency] = useState(false);
 
   const handleSave = (e) => {
     e.preventDefault();
-    if (!name || !phone || !email || !bloodGroup || !dob || !gender || !address || !reasonForRequest || !emergencyContact) {
+    if (!name || !phone || !email || !bloodGroup || !dob || !gender || !address || !reason || !EmContact) {
       alert("Please fill in all the details.");
     } else {
-      fetch("http://localhost/seProfile.php", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name,
-          phone,
-          email,
-          address,
-          bloodGroup,
-          dob,
-          gender,
-          reasonForRequest,
-          emergencyContact,
-          urgency,
-        }),
+      axios.post("http://localhost/Project/PHP/Recipient.php", {
+        name,
+        phone,
+        email,
+        address,
+        bloodGroup,
+        dob,
+        gender,
+        reason,
+        EmContact,
+        urgency
       })
-        .then((response) => response.json())
-        .then((data) => {
-          if (data.success) {
-            alert("Thank you for registering your blood request.");
-          } else {
-            alert("Failed to save data.");
-          }
-        });
+      .then((response) => {
+        if (response.data.success) {
+          alert("Thank you for registering your blood request.");
+        } else {
+          alert("Failed to save data.");
+        }
+      })
+      .catch((error) => {
+        console.error("There was an error!", error);
+        alert("Failed to connect to the server.");
+      });
     }
   };
 
@@ -146,7 +144,7 @@ function BloodRecipient() {
               Reason for Requesting Blood
               <input
                 type="text"
-                value={reasonForRequest}
+                value={reason}
                 onChange={(e) => setReasonForRequest(e.target.value)}
                 placeholder="Reason for Request (e.g., Surgery, Accident, etc.)"
                 required
@@ -158,7 +156,7 @@ function BloodRecipient() {
               Emergency Contact
               <input
                 type="text"
-                value={emergencyContact}
+                value={EmContact}
                 onChange={(e) => setEmergencyContact(e.target.value)}
                 placeholder="Emergency Contact Name and Phone"
                 required
