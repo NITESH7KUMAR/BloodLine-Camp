@@ -4,7 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 119vh; 
+    height: 169vh; 
     width: 98vw; 
     background-image: url('../assets/regimg.png');
     background-size: cover; 
@@ -15,7 +15,8 @@
   }
   
   .rec-container {
-    margin-top: 100px;
+      margin-top: 300px;
+      padding-bottom: 200px;
       width: 490px;
       padding: 20px;
       background-color: rgb(204, 232, 178);

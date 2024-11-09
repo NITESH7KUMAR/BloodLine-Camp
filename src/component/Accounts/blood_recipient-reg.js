@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./blood_recipient-reg.css";
 
-function Blood_recipient() {
+function BloodRecipient() {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
@@ -196,4 +196,4 @@ function Blood_recipient() {
   );
 }
 
-export default Blood_recipient;
+export default BloodRecipient;
