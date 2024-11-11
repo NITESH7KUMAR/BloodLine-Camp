@@ -83,10 +83,11 @@
     color: #1a1c1a;
     font-weight: 550;
     font-size: 18px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family:sans-serif;
     text-align: center;
     display: block;
   }
+ 
 
   .login a{
     background-color: #468e6c; 

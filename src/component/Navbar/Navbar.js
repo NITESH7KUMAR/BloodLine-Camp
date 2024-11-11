@@ -1,11 +1,26 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import axios from 'axios'; // Import Axios
 import Accounts from '../Accounts/Accounts.js';
 
 const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
     const handleLogout = () => {
-        onLoginStateChange(false); // Change the login state to false
+        // Send a POST request to the logout.php
+        axios
+            .post('http://localhost/Project/PHP/logout.php')
+            .then((response) => {
+                if (response.data.success) {
+                    onLoginStateChange(false); // Change the login state to false
+                    alert("Logged out successfully");
+                } else {
+                    alert("Logout failed, please try again.");
+                }
+            })
+            .catch((error) => {
+                console.error("Error logging out:", error);
+                alert("An error occurred during logout. Please try again.");
+            });
     };
 
     return (
@@ -26,7 +41,7 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
                         <Link to="/Donatenow">DonateNow</Link>
                     </li>
                     <li className="nav-links1">
-                        <Accounts/>
+                    <Accounts isLoggedIn={isLoggedIn} />
                     </li>
                 </ul>
 
