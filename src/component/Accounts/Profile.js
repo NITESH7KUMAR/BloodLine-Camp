@@ -72,7 +72,7 @@ function ProfilePage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="Email"
+                placeholder="Enter login email"
                 required
               />
             </label>

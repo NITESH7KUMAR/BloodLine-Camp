@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import axios from 'axios';
 import './Login.css';
 
@@ -19,9 +19,8 @@ function Login({ onLogin }) {
             .then((response) => {
                 if (response.data.success) {
                     alert("Welcome Back!");
-                    localStorage.setItem('isLoggedIn', 'true'); // Store login state in localStorage
                     onLogin(); // Update login state in the parent component
-                    navigate('/'); // Redirect to home page
+                    navigate('/');
                 } else {
                     alert(response.data.message || "Invalid credentials. Please try again.");
                 }
@@ -33,38 +32,37 @@ function Login({ onLogin }) {
     };
 
     return (
-        <div className="login-page"> {/* Add this wrapper */}
-            <div className="login-container">
-                <h2>Login</h2>
-                <form onSubmit={handleLogin}>
-                    <label>
-                        Username or Email:
-                        <input
-                            type="text"
-                            value={identifier}
-                            onChange={(e) => setIdentifier(e.target.value)}
-                            required
-                        />
-                    </label>
-                    <label>
-                        Password:
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                        />
-                    </label>
-                    <button type="submit">Login</button>
-                </form>
-                <div className="signup-link">
-                    <Link to="/signup">
-                        <button>Don't have an account? Signup</button>
-                    </Link>
+            <div className="login-page"> {/* Add this wrapper */}
+                <div className="login-container">
+                    <h2>Login</h2>
+                    <form onSubmit={handleLogin}>
+                        <label>
+                            Username or Email:
+                            <input
+                                type="text"
+                                value={identifier}
+                                onChange={(e) => setIdentifier(e.target.value)}
+                                required
+                            />
+                        </label>
+                        <label>
+                            Password:
+                            <input
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                            />
+                        </label>
+                        <button type="submit">Login</button>
+                    </form>
+                    <div className="signup-link">
+                        <Link to="/signup">
+                            <button>Don't have an account? Signup</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
-        </div>
-    );
+        );
 }
-
 export default Login;
