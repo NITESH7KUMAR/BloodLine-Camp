@@ -1,32 +1,33 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate,Link } from 'react-router-dom';
 import './Accounts.css';
 
 function Accounts({ isLoggedIn }) {
   const [isOpen, setIsOpen] = useState(false);
   const [message, setMessage] = useState('');
+  const navigate = useNavigate();
 
-  const handleClick = () => {
+  const toggleDropdown = () => {
     if (!isLoggedIn) {
-      setMessage('Please log in first to access your account.');
-      return;
+      alert('Please log in first to access your account.');
+      return navigate('/');;
     }
     setMessage('');
-    setIsOpen((prev) => !prev); // Toggle the dropdown on click
+    setIsOpen(!isOpen);
   };
 
   return (
     <>
       <div className="dropdown">
         {/* Only show the dropdown button if the user is logged in */}
-        <button className="dropbtn" onClick={handleClick}>
-          Accounts
-        </button>
+        {isLoggedIn ? (
+          <button className="dropbtn" onClick={toggleDropdown}>Accounts</button>
+        ) : (
+          <button className="dropbtn" onClick={toggleDropdown}>Accounts</button>
+        )}
 
         {/* Dropdown menu */}
-        <ul
-          className={`dropdown-content ${isOpen ? 'show' : 'hide'}`}
-        >
+        <ul className={`dropdown-content ${isOpen ? 'show' : 'hide'}`}>
           <div className="expertise-container">
             <div className="expertise-section">
               <h3>Our Mission</h3>
@@ -40,7 +41,7 @@ function Accounts({ isLoggedIn }) {
             </div>
           </div>
         </ul>
-
+        
         {/* Display message if the user is not logged in */}
         {!isLoggedIn && message && <div className="login-message">{message}</div>}
       </div>
