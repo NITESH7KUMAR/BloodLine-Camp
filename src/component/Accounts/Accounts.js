@@ -10,7 +10,7 @@ function Accounts({ isLoggedIn }) {
   const toggleDropdown = () => {
     if (!isLoggedIn) {
       alert('Please log in first to access your account.');
-      return navigate('/');;
+      return navigate('/Login');;
     }
     setMessage('');
     setIsOpen(!isOpen);
