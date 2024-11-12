@@ -39,6 +39,9 @@ const Footer = () => {
                         <a href="#linkedin">
                             <i className="fab fa-linkedin"></i> LinkedIn
                         </a>
+                        <a href="#phone">
+                            <i className="fa fa-phone"></i> 6002207736
+                        </a>
                     </ul>
                     <ul>
                         <p>Our Services</p>
