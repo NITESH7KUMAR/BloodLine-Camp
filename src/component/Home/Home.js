@@ -13,7 +13,7 @@ function Home() {
   return (
 
       <div className='home'>
-        <div className='h1'>
+        <div className='heading'>
           <h1>Life-Saving Gift<br />Empowering Hope</h1>
         </div>
 

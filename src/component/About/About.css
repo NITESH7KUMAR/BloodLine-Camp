@@ -1,253 +1,317 @@
-/* CSS */
+/* Reset default margins and padding */
 
-/* Reset default margins */
 
 .about {
-    padding-top: 4000px;
+    padding-top: 4088px;
     text-align: center;
     background-color: #e3f9fb;
 }
-.camp h1{
-    background-color: rgb(241, 216, 184);
+
+.camp h1 {
+    background-color: rgba(203, 241, 184, 0.447);
     font-size: 50px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
-    font-style: normal;
     font-weight: 50;
     color: black;
-    line-height: 1.1;
-    flex-wrap: flex;
-    white-space:normal;
-    padding-top: 10px ;
-    padding-bottom: 20px ;
+    margin-bottom: 50px;
+    padding: 15px;
     cursor: pointer;
+    border-radius: 10px;
     border: 2px solid rgba(89, 10, 10, 0.303);
 }
-.camp p{
+
+
+.camp1 p {
     font-size: 20px;
-    font-weight:300;
-    margin-left:50px ;
-    margin-right:50px ;
-    white-space:normal;
+    font-weight: 300;
+    margin: 0 10px;
+    white-space: normal;
     line-height: 1.4;
+    padding-bottom: 0px;
+}
+.camp1 button{
+
+        padding: 10px 20px;
+        background-color: #1a1c1ae4;
+        color: white;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 1em;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: none;
+        text-align: left;
+        display: inline-block;
+        margin-left: 0;
+    
+}
+.camp1 button:hover {
+    background-color: rgba(185, 59, 37, 0.716);
+    color: black;
 }
 
 .h1 h1 {
     font-size: 100px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: left;
-    font-style: normal;
-    font-weight: 500;
     color: black;
-    line-height: 1.1;
-    flex-wrap: flex;
-    margin-top: 98px;
-    margin-left:50px ;
-    white-space:normal;
+    margin-top: 300px;
+    margin-left: 0px;
+    padding:20px 0px 20px 170px;
     background-color: rgba(255, 255, 0, 0.233);
     border-radius: 500px;
-    text-align: center;
- 
-}
-.about-image img{
-    border-radius: 30px;
-    min-width: 100%;
 }
 
-.about-image{
-    background-color: rgb(205, 150, 205,0.5);
+.about-image {
+    background-color: rgb(205, 150, 205, 0.5);
     border-radius: 50px;
 }
 
-.about-image h2{
-    padding-top: 100px;
+.about-image img {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.about-image h2 {
     font-size: 5.5em;
     text-align: center;
     font-weight: bold;
     color: rgb(49, 5, 5);
-    padding-bottom: 180px;
-  
+    padding: 100px 0 180px;
 }
 
-.about-image2 h4{
+.about-image2 {
+    background-color: rgba(6, 56, 6, 0.003);
+    border-radius: 30px;
+}
+
+.about-image2 h4 {
     padding-top: 10px;
     font-size: 2.5em;
     text-align: center;
     font-weight: bold;
     color: rgb(49, 5, 5);
     padding-bottom: 10px;
+    margin-bottom: 0px;
     background-color: #06232608;
-  cursor: pointer;
+    cursor: pointer;
+}
+.about-image2 p {
+    font-size: 1.1em;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.915);
 }
 
-.about-image2 img{
-padding: 20px;
-width: 30%;
-height: 500px; 
-position: relative;
-border-radius: 6%;
-cursor:pointer;
-}
-.about-image2{
-    background-color: rgba(6, 56, 6, 0.003);
-    border-radius: 30px;
+/* Image styling for about section */
+.about-image2 img {
+    padding: 10px;
+    width: 30%;
+    height: 450px;
+    border-radius: 6%;
+    cursor: pointer;
+    object-fit: cover;
 }
 
-.about-about{
-        background-color: rgb(184, 219, 184,0.1);
-        padding-bottom: 10px;
+/* Container for images */
+.campaign-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
-.about-about h2{
+/* Each image container */
+.image-container {
+    flex: 1;
+    max-width: 30%;
+    position: relative;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6%;
+    object-fit: cover;
+}
+
+/* Optional: Caption styling */
+figure {
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+
+figcaption {
+    position: absolute;
+    top: -13.5px;
+    left: 20px;
+    right: 0px;
+    color: rgb(5, 4, 4);
+    padding: 10px;
+    border-radius: 5px;
+}
+.image-container button{
+
+    padding: 10px 20px;
+    background-color: #1a1c1ae4;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+
+}
+.image-container button:hover {
+background-color: rgba(185, 59, 37, 0.716);
+color: black;
+}
+
+
+
+.about-about {
+    background-color: rgb(184, 219, 184, 0.1);
+    padding-top: 250px;
+ 
+}
+
+.about-about h2 { 
     font-size: 8em;
     text-align: left;
     line-height: 0.9em;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .about-content {
-    padding: 30px;
-    display: flex; 
+    display: flex;
     gap: 20px;
 }
+
 .about-content1 {
     flex: 1;
     text-align: left;
 }
 
-.about-content1 h5{
+.about-content1 h5 {
     font-size: 1.5em;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
     text-align: left;
 }
 
-.about-content1 button{
+.about-content1 button {
     padding: 10px 20px;
     background-color: #1a1c1a;
     color: white;
     border-radius: 50px;
     cursor: pointer;
     font-size: 1em;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
     border: none;
     text-align: left;
     display: inline-block;
-    margin-left: 0px;
+    margin-left: 0;
 }
 
-.about-content1 button:hover{
-    background-color: rgb(162, 221, 162);
+.about-content1 button:hover {
+    background-color: rgba(235, 13, 13, 0.8);
     color: black;
 }
 
-.donate-image{
+.donate-image {
     flex: 1.5;
 }
-.donate-image img{
-  border-radius: 30px;
-  min-width: 100%;
+
+.donate-image img {
+    border-radius: 30px;
+    min-width: 100%;
 }
 
-.Hcarousel{
-    position: relative;
-    background-color: rgb(184, 219, 184,0.9);
-    border-bottom-right-radius: 12%;
-    border-bottom-left-radius: 12%;
-    padding-top: 10px;
-    z-index: 1;
-}
 
-.Hcarousel h1{
-    font-size: 4em;
-}
-.Footer{
+.Footer {
     z-index: 0;
     position: relative;
 }
 
 /* Responsive styles */
-@media (max-width: 990px) { 
+@media (max-width: 990px) {
     .about {
-        padding-top: 3800px;
-        text-align: center;
+        padding-top: 2800px;
         background-color: #f0efef;
     }
-    
-    .h1 h1  {
+
+    .h1 h1 {
         font-size: 60px;
-        white-space:normal;
         margin-top: 100px;
-       
-    }
-    .about-image h2  {
-        font-size: 50px;
-        white-space:normal;
-        margin-top: -50px;
-        margin-bottom: -80px; 
     }
 
-    .about-about h2  {
+    .about-image h2 {
         font-size: 50px;
-        white-space:normal;
+        margin-top: -50px;
+        margin-bottom: -80px;
+    }
+
+    .about-about h2 {
+        font-size: 50px;
         text-align: left;
         margin-left: 80px;
-       
-    }
-    .about-content1 h5{ 
-            font-size: 1em; 
     }
 
+    .about-content1 h5 {
+        font-size: 1em;
+    }
 }
-
 
 @media (max-width: 990px) {
     .about-content {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .about-content .about-content1 {
-        text-align: center; 
-        margin-top: 20px; 
+        text-align: center;
+        margin-top: 20px;
     }
 
     .about-content img {
         width: 90%;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
 }
 
-@media(max-width:759px){
-    .about-image2 img{
+@media (max-width: 759px) {
+    .about-image2 img {
         width: 90%;
         height: 80%;
     }
 }
 
-
-@media(max-width:389px){
-   .h1 h1 {
-    font-size: 20px;
-    white-space:normal;
-    margin-top: 100px;
-    }
-    .about-image h2  {
+@media (max-width: 389px) {
+    .h1 h1 {
         font-size: 20px;
-        white-space:normal;
+        margin-top: 100px;
+    }
+
+    .about-image h2 {
+        font-size: 20px;
         margin-top: -50px;
-        margin-bottom: -80px; 
+        margin-bottom: -80px;
     }
 
-    .about-about h2  {
+    .about-about h2 {
         font-size: 20px;
-        white-space:normal;
         text-align: left;
         margin-left: 80px;
-       
     }
-    .about-content1 h5{ 
-            font-size: 0.5em; 
+
+    .about-content1 h5 {
+        font-size: 0.5em;
     }
 }
