@@ -25,7 +25,7 @@ function ProfilePage() {
           if (response.data.success) {
             alert("Profile updated successfully.");
           } else {
-            alert("Failed to save data.");
+            alert("Please enter your login email to update profile");
           }
         })
         .catch((error) => {
