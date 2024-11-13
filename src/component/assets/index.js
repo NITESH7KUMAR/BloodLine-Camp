@@ -21,4 +21,9 @@ export { default as img20 } from './about-img5.png';
 export { default as img21 } from './about-img6.png';
 export { default as img22 } from './about-img8.png';
 // export { default as img23 } from './about-img8.png';
+export { default as Dimg11 } from './Dimg11.png';
+export { default as Dimg2 } from './Dimg2.png';
+export { default as Dimg33 } from './Dimg33.png';
+export { default as Dimg44 } from './Dimg44.png';
+
 

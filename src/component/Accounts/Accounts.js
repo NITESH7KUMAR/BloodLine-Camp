@@ -36,8 +36,8 @@ function Accounts({ isLoggedIn }) {
               <Link to="/blood_recipient-reg"><li>Emergency Support</li></Link>
               <Link to="/"><li>Blood Camps</li></Link>
               <Link to="/about"><li>Donor Network</li></Link>
-              <Link to="/about"><li>Health Safety</li></Link>
-              <Link to="/"><li>Awareness Drives</li></Link>
+              <Link to="/"><li>Health Safety</li></Link>
+              <Link to="/donateNow"><li>Awareness Drives</li></Link>
             </div>
           </div>
         </ul>
