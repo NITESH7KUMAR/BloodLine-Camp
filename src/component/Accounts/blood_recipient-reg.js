@@ -34,7 +34,7 @@ function BloodRecipient() {
       })
       .then((response) => {
         if (response.data.success) {
-          alert("Thank you for registering your blood request.");
+          alert("Thank you for registering for your blood request.");
         } else {
           alert("Failed to save data.");
         }
