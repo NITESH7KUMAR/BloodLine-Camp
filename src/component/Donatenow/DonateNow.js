@@ -62,13 +62,13 @@ function DonateNow() {
           <div className="Dimage-container">
             <img src={Dimg11} alt="Blood Donation Drive" />
           </div>
-          <div className="Dimage-container">
+          <div className="Dimage-container1">
             <img src={Dimg2} alt="Blood Donation Participants" />
           </div>
-          <div className="Dimage-container">
+          <div className="Dimage-container2">
             <img src={Dimg44} alt="Blood-Donating Camp" />
           </div>
-          <div className="Dimage-container">
+          <div className="Dimage-container2">
             <img src={Dimg33} alt="Blood-Donating Camp" />
           </div>
         </div>

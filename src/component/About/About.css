@@ -2,13 +2,14 @@
 
 
 .about {
-    padding-top: 4088px;
+    padding-top: 4154px;
     text-align: center;
     background-color: #e3f9fb;
 }
 
+
 .camp h1 {
-    background-color: rgba(203, 241, 184, 0.447);
+    background-color: rgba(121, 242, 7, 0.214);
     font-size: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -59,7 +60,7 @@
     margin-top: 300px;
     margin-left: 0px;
     padding:20px 0px 20px 170px;
-    background-color: rgba(255, 255, 0, 0.233);
+    background-color: rgba(255, 255, 0, 0.407);
     border-radius: 500px;
 }
 
@@ -82,8 +83,13 @@
 }
 
 .about-image2 {
-    background-color: rgba(6, 56, 6, 0.003);
+    background-color: rgba(13, 143, 112, 0.504);
     border-radius: 30px;
+    border-bottom-left-radius: 150px;
+    border-bottom-right-radius: 150px;
+    border-top-left-radius: 63px;
+    border-top-right-radius:63px;
+    padding-bottom: 300px;
 }
 
 .about-image2 h4 {
@@ -93,14 +99,17 @@
     font-weight: bold;
     color: rgb(49, 5, 5);
     padding-bottom: 10px;
+    border: 2px solid black;
     margin-bottom: 0px;
-    background-color: #06232608;
+    background-color: #e5950b59;
     cursor: pointer;
+    border-top-left-radius: 63px;
+    border-top-right-radius:63px;
 }
 .about-image2 p {
-    font-size: 1.1em;
+    font-size: 1.2em;
     text-align: center;
-    color: rgba(0, 0, 0, 0.915);
+    color: rgba(11, 4, 4, 0.915);
 }
 
 /* Image styling for about section */
@@ -173,11 +182,10 @@ background-color: rgba(185, 59, 37, 0.716);
 color: black;
 }
 
-
-
 .about-about {
     background-color: rgb(184, 219, 184, 0.1);
-    padding-top: 250px;
+    padding-top: 0px;
+    padding-bottom: 10px;
  
 }
 
