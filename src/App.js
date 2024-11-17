@@ -10,8 +10,7 @@ import Login from './component/Login/Login.js';
 import ProfilePage from './component/Accounts/Profile.js';
 import Registration from './component/Accounts/Registration.js';
 import BloodRecipient from './component/Accounts/blood_recipient-reg.js';
-import ProtectedRoute from './component/Route/ProtectRoute'; // Correct import
-
+import ProtectedRoute from './component/Route/ProtectRoute'; 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('isLoggedIn') === 'true');
 

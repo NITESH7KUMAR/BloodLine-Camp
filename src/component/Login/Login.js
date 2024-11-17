@@ -4,12 +4,12 @@ import axios from 'axios';
 import './Login.css';
 
 function Login({ onLogin }) {
-    const [identifier, setIdentifier] = useState(''); // For username or email input
-    const [password, setPassword] = useState(''); // For password input
+    const [identifier, setIdentifier] = useState(''); 
+    const [password, setPassword] = useState(''); 
     const navigate = useNavigate();
 
     const handleLogin = (e) => {
-        e.preventDefault(); // Prevent default form submission
+        e.preventDefault();
 
         axios
             .post('http://localhost/Project/PHP/Login.php', {
@@ -26,7 +26,6 @@ function Login({ onLogin }) {
                     // Notify parent component about login status
                     onLogin();
 
-                    // Navigate to home or dashboard
                     navigate('/');
                 } else {
                     alert(response.data.message || "Invalid credentials. Please try again.");
@@ -39,7 +38,7 @@ function Login({ onLogin }) {
     };
 
     return (
-        <div className="login-page"> {/* Wrapper for the entire login page */}
+        <div className="login-page"> 
             <div className="login-container">
                 <h2>Login</h2>
                 <form onSubmit={handleLogin}>

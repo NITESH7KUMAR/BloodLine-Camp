@@ -35,6 +35,16 @@ function BloodRecipient() {
       .then((response) => {
         if (response.data.success) {
           alert("Thank you for registering for your blood request.");
+          setName("");
+          setPhone("");
+          setEmail("");
+          setAddress("");
+          setBloodGroup("");
+          setDob("");
+          setGender("");
+          setReasonForRequest("");
+          setEmergencyContact("");
+          setUrgency(false);
         } else {
           alert("Failed to save data.");
         }

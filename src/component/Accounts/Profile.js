@@ -24,6 +24,10 @@ function ProfilePage() {
         .then((response) => {
           if (response.data.success) {
             alert("Profile updated successfully.");
+            setName("");
+            setPhone("");
+            setEmail("");
+            setAddress("");
           } else {
             alert("Please enter your login email to update profile");
           }

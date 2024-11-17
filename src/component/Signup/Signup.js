@@ -32,7 +32,7 @@ function Signup() {
                 console.log(response.data);  // Check the response data
                 if (response.data.message) {
                     alert(response.data.message);  // Show the success message
-                    navigate('/login'); // Redirect to login page after successful signup
+                    navigate('/login'); 
                 } else {
                     alert('Unexpected response from server');
                 }
