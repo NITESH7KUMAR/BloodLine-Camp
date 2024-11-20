@@ -28,10 +28,23 @@ function Home() {
             <img src={img3} alt="Blood-Donating Camp" />
           </div>
         </div>
-
+        <h4>Gallery</h4>
         <div className='home-image2'>
-          <img src={img4} alt="Blood-Donating Camp" />
-          <img src={img5} alt="Blood-Donating Camp" />
+          
+          <div className='himage-container'>
+            <img src={img4} alt="Blood-Donating Camp" />
+            <p className="image-caption">Welcome to Arogya BloodLine, a compassionate community dedicated 
+                         that life-saving blood is available to those in need, whenever and wherever it's needed.
+                         We organize blood donation camps across various cities, bringing together donors, volunteers, 
+                         and healthcare professionals to make a difference.</p>
+          </div>
+          <div className='himage-container'>
+            <img src={img5} alt="Blood-Donating Camp" />
+            <p className="image-caption">Blood Donation Camp was organized in the Institute in association with SDM Hospital, Ujire 
+                        on 3rd April 2019. Dr. Prabhash Kumar, Medical Officer, SDM Hospital was the Chief Guest 
+                        during inauguration. A total of 367 units of blood were collected during the camp.
+                        The activity of blood donation was started in the morning 10:00 am </p>
+          </div>
         </div>
 
         <div className='home-image3'>

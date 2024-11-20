@@ -2,7 +2,7 @@
 
 
 .about {
-    padding-top: 4157px;
+    padding-top: 3967px;
     text-align: center;
     background-color: #e3f9fb;
 }
@@ -70,8 +70,9 @@
 }
 
 .about-image img {
-    border-radius: 30px;
-    width: 100%;
+    border-radius: 50px;
+    min-width: 100%;
+    height: 800px;
 }
 
 .about-image h2 {
