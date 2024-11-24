@@ -30,6 +30,7 @@ border-radius: 5%;
 width: 99%;
 cursor: pointer;
 height: 750px;
+
 }
 
 .home-image {
@@ -120,7 +121,7 @@ h4 {
     object-fit: cover;
     height: 800px; 
     position: relative;
-    border-radius: 5%;
+    border-radius: 9%;
     cursor:pointer;
 }
 
@@ -202,93 +203,164 @@ h4 {
     position: relative;
 }
 
+
 /* Responsive styles */
-@media (max-width: 990px) { 
-    .home {
-        padding-top: 5250px;
-        text-align: center;
-        background-color: #f0efef;
+
+@media (max-width: 1360px) {
+    .heading h1 {
+        font-size: 100px;
+        margin-left: 40px;
     }
-    
-    .home h1  {
+
+    .home-image h2 {
         font-size: 60px;
-        white-space:normal;
-        margin-top: 100px;
-       
-    }
-    .home-image h2  {
-        font-size: 50px;
-        white-space:normal;
-        margin-top: -50px;
-        margin-bottom: -80px; 
     }
 
-    .home-about h2  {
+@media (max-width: 1024px) {
+    .home{
+        padding-top:6000px;
+    }
+    .heading h1 {
+        font-size: 80px;
+        margin-left: 30px;
+    }
+
+    .home-image h2 {
         font-size: 50px;
-        white-space:normal;
+    }
+
+    .home-content {
+        gap: 15px;
+    }
+
+    .about-content1 {
         text-align: left;
-        margin-left: 80px;
-       
-    }
-    .about-content1 h5{ 
-            font-size: 1em; 
     }
 
-}
-
-@media (max-width:1467px){
-    .home-image3 img{
-        width: 90% ;
-        height: 80%;
+    .home-image3 img {
+        width: 95%;
+        height: auto;
     }
-}
 
-@media (max-width: 990px) {
+
+@media (max-width: 770px) {
+    
+    .home {
+        padding-top: 5900px;
+        size-adjust: auto;
+    }
+    .heading h1 {
+        font-size: 60px;
+        margin-left: 30px;
+    }
+
+    .home-image h2 {
+        font-size: 30px;
+    }
+     
+    .home-image img,
+    .home-image1 img,
+    .home-image2 img,
+    .about-image img {
+        width: 95%;
+        height: auto; 
+    }
+    .home-image3 img {
+        width: 95%; 
+        height: auto; 
+
+    }
+    .home-image2 {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center-align content */
+        padding: 15px; /* Adjust padding for a cleaner look */
+    }
+
+    
     .home-content {
         flex-direction: column;
-        align-items: center; 
+        gap: 10px;
     }
 
-    .home-content .about-content1 {
-        text-align: center; 
-        margin-top: 20px; 
+    .about-content1 {
+        text-align: center; /* Center text for small screens */
+        margin-top: 20px;
     }
 
-    .home-content img {
-        width: 90%;
-        margin-bottom: 20px; 
-    }
-}
-
-@media(max-width:759px){
-    .home-image2 img{
-        width: 90%;
-        height: 80%;
-    }
-}
-
-
-@media(max-width:389px){
-   .home h1 {
-    font-size: 20px;
-    white-space:normal;
-    margin-top: 100px;
-    }
-    .home-image h2  {
-        font-size: 20px;
-        white-space:normal;
-        margin-top: -50px;
-        margin-bottom: -80px; 
+    .about-content1 button {
+        width: 18%;
+        margin-top: 10px;
     }
 
-    .home-about h2  {
-        font-size: 20px;
-        white-space:normal;
-        text-align: left;
-        margin-left: 80px;
+    h4 {
+        padding-top: 10px;
+        font-size: 2.0em;
+        border-top-left-radius: 63px;
+        border-top-right-radius:63px;
+    } 
+    .home-image2 {
+        border-bottom-left-radius: 63px;
+        border-bottom-right-radius:63px;
+    
+      }
+      
+
+
+
+/* For very small mobile devices (max-width: 320px) */
+@media (max-width: 376px) {
+
+    .home{
+        padding-top: 5800px;
+        margin-left: 400px;   
+    }
+    .heading h1 {
+        font-size: 40px;
+        margin-left: 20px;
+    }
+
+   .home-image img{
+        width: 99%;
+        height: auto; 
+        display: block;     
+        margin-left: 2px;      
+    }
+    .home-image1 img{
+        width: 95%;
+        height: auto; 
+        display: block;     
+        margin-left: 40px;      
+    }
+    .about-image img {
+        width: 95%;
+        height: auto; 
+        display: block;     
+        margin-left: 10px;      
+    }
+    .home-image3 img {
+        width: 95%; 
+        height: auto; 
+
+    }
+    .home-image2 {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center-align content */
+        padding: 15px; 
+        width: 95%;
+        height: auto; 
+        display: block;     
+        margin-left: 10px;
+    }
+
+      
+    .home-image h2 {
+        font-size: 25px;
+        padding-top: 20px;
+        padding-bottom: 100px;
        
     }
-    .about-content1 h5{ 
-            font-size: 0.5em; 
-    }
+
+}
+}
+}
 }

@@ -59,16 +59,16 @@ function DonateNow() {
         <p>Donate blood, save lives. Your small act of kindness can be someone's lifeline. Give the gift of life today.</p>
 
         <div className="gallery">
-          <div className="Dimage-container">
-            <img src={Dimg11} alt="Blood Donation Drive" />
-          </div>
           <div className="Dimage-container1">
-            <img src={Dimg2} alt="Blood Donation Participants" />
+            <img src={Dimg2} alt="Blood Donation Drive" />
+          </div>
+          <div className="Dimage-container">
+            <img src={Dimg11} alt="Blood Donation Participants" />
           </div>
           <div className="Dimage-container2">
             <img src={Dimg44} alt="Blood-Donating Camp" />
           </div>
-          <div className="Dimage-container2">
+          <div className="Dimage-container3">
             <img src={Dimg33} alt="Blood-Donating Camp" />
           </div>
         </div>

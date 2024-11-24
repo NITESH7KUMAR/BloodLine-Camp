@@ -1,5 +1,5 @@
 .donate {
-    padding-top: 1733px;
+    padding-top: 1488px;
     text-align: center;
     background-color: #a643bc2c;
 }
@@ -116,21 +116,21 @@
     gap: 10px;
     margin-bottom: 100px;
     margin-top: 60px;
-    padding: 0 10px;
+    padding: 0 100px;
     cursor: pointer;
 }
 
-.Dimage-container {
+/* .Dimage-container {
     flex: 1 1 48%; 
     max-width: 48%;
     position: relative;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 .Dimage-container img {
-    width: 90%; 
-    height: 100%;
+    width: 92%; 
+    height: 99%;
     object-fit: cover;
     border-radius: 6%;
     transition: transform 0.3s ease;
@@ -151,7 +151,7 @@
 
 .Dimage-container1 img {
     width: 100%; 
-    height: 80%;
+    height: 99%;
     object-fit: cover;
     border-radius: 6%;
     transition: transform 0.3s ease;
@@ -171,7 +171,24 @@
 }
 .Dimage-container2 img {
     width: 100%; 
-    height: 105%;
+    margin-top: 20px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6%;
+    transition: transform 0.3s ease;
+}
+.Dimage-container3 {
+    flex: 1 1 48%; 
+    max-width: 48%;
+    position: relative;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Dimage-container3 img {
+    width: 100%; 
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 40px;
     object-fit: cover;
     border-radius: 6%;
     transition: transform 0.3s ease;
