@@ -22,7 +22,7 @@ const Navbar = ({ isLoggedIn, onLoginStateChange }) => {
                 if (response.data.success) {
                     // Update login state to false
                     onLoginStateChange(false); // This triggers a re-render in the parent
-                    localStorage.removeItem('username'); // Remove username from localStorage
+                    localStorage.removeItem('username');
                     alert("Logged out successfully");
                 } else {
                     alert("Logout failed, please try again.");
